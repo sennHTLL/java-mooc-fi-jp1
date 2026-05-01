@@ -30,18 +30,15 @@ public class Exercise7 {
 
     public static void searchIndexOf(ArrayList<Integer> list, int searchValue) {
         // int numValue = 0;
-        int numIndex = 0;
+        // int numIndex = 0;
         ArrayList<Integer> indexList = new ArrayList<>();
 
         for(int i = 0; i < list.size(); i++) {
             // System.out.println("Before condition check index: " + i);
             // System.out.println("Before condition check value: " + list.get(i));
             if (list.get(i) == searchValue) {
-                numIndex = i;
-                indexList.add(numIndex);
-            } else {
-                System.out.println("number doesn't exists");
-                break;
+                // numIndex = i;
+                indexList.add(i);
             }
             // System.out.println("After condition check index: " + numIndex);
             // System.out.println("After condition check value: " + numValue);
