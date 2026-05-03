@@ -3,7 +3,7 @@ package jpi.p3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exercise9 {
+public class Exercise09 {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
 

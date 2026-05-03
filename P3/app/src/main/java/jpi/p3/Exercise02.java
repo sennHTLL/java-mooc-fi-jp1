@@ -3,7 +3,7 @@ package jpi.p3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Exercise02 {
     public static void run(){
         System.out.println(" === EXERCISE 2 === ");
         System.out.println(" == Understanding ArrayList index == ");
