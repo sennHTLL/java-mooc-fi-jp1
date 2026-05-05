@@ -15,7 +15,9 @@ public class App {
        // Exercise09.run();
        // Exercise10.run(); 
        // Exercise11.run();
-       Exercise12.run();
+       // Exercise12.run();
+       Exercise13.run();
+       Exercise14.run();
     }
 
     public static void forEachLoop() {
