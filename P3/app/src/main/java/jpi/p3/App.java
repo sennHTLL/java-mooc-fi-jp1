@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
+        // == Array List ==
        // Exercise01.run();
        // Exercise02.run();
        // Exercise03.run();
@@ -16,8 +17,15 @@ public class App {
        // Exercise10.run(); 
        // Exercise11.run();
        // Exercise12.run();
-       Exercise13.run();
-       Exercise14.run();
+        // == Array ==
+       // Exercise13.run();
+       // Exercise14.run();
+       // Exercise15.run();
+        // == String ==
+        Exercise16.run();
+        Exercise17.run();
+        Exercise18.run();
+        Exercise19.run();
     }
 
     public static void forEachLoop() {
