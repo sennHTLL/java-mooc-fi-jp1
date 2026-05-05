@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Exercise19{
     public static void run() {
         IO.println("=== EXERCISE 19 ===");
-        IO.println("[string] · get sum and average ages");
+        IO.println("[string] · get sum, average, oldest person, longest name");
         IO.println();
 
         String[] textTemplate = textTemplate();
