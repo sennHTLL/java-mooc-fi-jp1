@@ -1,0 +1,20 @@
+package jpi.constructors;
+
+public class Product {
+
+    private String name;
+    private double price;
+    private int quantity;
+
+    public Product(String initialName, 
+                   double initialPrice,
+                   int initialQuantity) {
+        this.name = initialName;
+        this.price = initialPrice;
+        this.quantity = initialQuantity;
+    }
+
+    public void print() {
+        IO.println(this.name + ", price " + this.price + ", " + this.quantity + " pcs" );
+    }
+}
