@@ -1,4 +1,4 @@
-package jpi.p4;
+package jpi.p4t1;
 
 import jpi.constructors.Door;
 import jpi.constructors.Product;

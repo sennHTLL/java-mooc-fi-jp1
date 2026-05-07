@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "jpi.p4.App"
+    mainClass = "jpi.p4t1.App"
 }
 
 tasks.named<Test>("test") {
