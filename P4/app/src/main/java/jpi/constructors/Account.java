@@ -5,7 +5,6 @@ public class Account {
     private String owner;
     private double balance;
 
-    // this is Constructor
     public Account(String owner, double balance) {
         this.owner = owner;
         this.balance = balance;

@@ -2,11 +2,7 @@ package jpi.p4;
 
 import jpi.constructors.Account; 
 
-//      class              object name    object
-//      ArrayList<Integer> integers = new ArrayList<>();
-// this is class ↓ ?
 public class Exercise01 {
-    // this is methods ↓ 
     public static void run() {
         IO.println("=== EXERCISE 1 ===");
         IO.println("[oop] · 1-2-3-4-5-6-7 M in my bank account");
