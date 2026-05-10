@@ -15,6 +15,7 @@ public class Exercise03 {
         IO.println(aibek);
         IO.println(assan);
         
+        // == == AGE INFO == ==
         for (int i = 0; i < 30; i++) {
             sen.growOlder();
         }
@@ -24,12 +25,23 @@ public class Exercise03 {
 
         IO.println();
 
-        printPerson(sen);
-        printPerson(aibek);
-        printPerson(assan);
+        // == == BODzY MASS == ==
+        sen.setWeight(56);
+        sen.setHeight(167);
+
+        // == == PRINTS == ==
+        printAgeInfo(sen);
+        printAgeInfo(aibek);
+        printAgeInfo(assan);
+
+        printBodyMassIndex(sen);
     }
 
-    public static void printPerson(Person person) {
+    public static void printBodyMassIndex(Person person) {
+        IO.println(person.getName() + ", body mass index is " + person.bodyMassIndex());
+    }
+
+    public static void printAgeInfo(Person person) {
         if (person.isOfLegalAge()) {
             IO.println(person.getName() + " is of legal age");
         } else {

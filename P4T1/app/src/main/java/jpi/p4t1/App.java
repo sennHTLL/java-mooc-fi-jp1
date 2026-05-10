@@ -9,12 +9,14 @@ public class App {
         // == OOP · Object's n' Classes == 
         // Exercise01.run();
         // Exercise02.run();
-        // Exercise03.run();
+        Exercise03.run();
         // Exercise04.run();
         // Exercise05.run();
         // Exercise06.run();
         // Exercise07.run(); 
         // Exercise08.run();
-        Exercise09.run();
+        // Exercise09.run();
+        Exercise10.run();
+        Exercise11.run();
     }
 }
