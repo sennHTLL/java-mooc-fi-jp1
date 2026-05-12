@@ -2,6 +2,10 @@ package jpi.p4t2;
 
 public class App {
     public static void main(String[] args) {
-        IO.println("Hello");
+        // Exercise01.run();
+        // Exercise02.run();
+        // Exercise03.run();
+        // Exercise04.run();
+        Exercise05.run();
     }
 }
