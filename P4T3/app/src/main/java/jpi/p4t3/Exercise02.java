@@ -10,14 +10,16 @@ public class Exercise02 {
 
         Scanner scanner = new Scanner(System.in);
 
+        IO.println("[try] · 1");
         file();
+        IO.println("[try] · 2");
         data();
+        IO.println("[try] · 3");
+        IO.print("Input file name (e.g. file.txt): ");
         userAsks(scanner);
     }
 
     public static void userAsks(Scanner scanner) {
-        IO.println("[try] · 3");
-        IO.print("Input file name (e.g. file.txt): ");
         String user = scanner.nextLine();
 
         try (Scanner reader = new Scanner(Paths.get("app/src/main/resources/files/" + user))) {
@@ -31,8 +33,6 @@ public class Exercise02 {
     }
 
     public static void data() {
-        IO.println("[try] · 2");
-
         try (Scanner reader = new Scanner(Paths.get("app/src/main/resources/files/data.txt"))) {
             while (reader.hasNextLine()) {
                 String row = reader.nextLine();
@@ -44,8 +44,6 @@ public class Exercise02 {
     }
 
     public static void file() {
-        IO.println("[try] · 1");
-        
         try (Scanner reader = new Scanner(Paths.get("app/src/main/resources/files/file.txt"))) {
             while (reader.hasNextLine()) {
                 String row = reader.nextLine();
