@@ -29,4 +29,9 @@ public class SportStatistics {
     public int getVisitingTeamPoints() {
         return visitingTeamPoints;
     }
+
+    @Override
+    public String toString() {
+        return homeTeam + ", points: " + homeTeamPoints + " : " + visitingTeam + ", points: " + visitingTeamPoints;
+    }
 }
