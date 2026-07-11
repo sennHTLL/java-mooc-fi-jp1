@@ -30,18 +30,12 @@ public class Person {
     public int getWeight() { return this.weight; }
 
     // setters
-    public void setHeight(int newHeight) {
-        this.height = newHeight;
-    }
+    public void setHeight(int newHeight) { this.height = newHeight; }
 
-    public void setWeight(int newWeight) {
-        this.weight = newWeight;
-    }
+    public void setWeight(int newWeight) { this.weight = newWeight; }
 
     // other constructors and methods
-    public void growWeight() {
-        this.weight += 1;
-    }
+    public void growWeight(int add) { this.weight += add; }
 
     public double bodyMassIndex() {
         double heightPerHundred = this.height / 100.0;
@@ -50,6 +44,22 @@ public class Person {
 
     public boolean olderThan(Person compared) {
         if (this.birthday.before(compared.getBirthday())) return true;
+        return false;
+    }
+
+    public boolean equals(Object compared) {
+        if (this == compared) { return true; }
+        if (!(compared instanceof Person)) { return false; }
+
+        Person comparingPerson = (Person) compared;
+        
+        if (this.name.equals(comparingPerson.name) &&
+            this.birthday.equals(comparingPerson.birthday) &&
+            this.height == comparingPerson.height &&
+            this.weight == comparingPerson.weight) { 
+            return true; 
+        }
+
         return false;
     }
 
