@@ -10,6 +10,7 @@ public class App {
         // Exercise06.run();
         // Exercise07.run();
         // Exercise08.run();
-        Exercise09.run();
+        // Exercise09.run();
+        Exercise10.run();
     }
 }
