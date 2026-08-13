@@ -16,6 +16,33 @@ public class SimpleCollection {
     this.words.add(w);
   }
 
+  public String longest() {
+    if (words.isEmpty()) {
+      return null;
+    }
+
+    String word = words.get(0);
+    String same = words.get(0);
+    String printIfSame = "";
+
+    for (String w : words) {
+      if (w.length() > word.length()) {
+        word = w;
+      }
+
+      if (w.length() == word.length()) {
+        if (w.equals(word)) {
+          printIfSame = "";
+        } else {
+          same = w;
+          printIfSame = " and " + same;
+        }
+      }
+    }
+
+    return "longest " + word + printIfSame;
+  }
+
   public String toString() {
     String outputBase = "The collection " + this.list;
 

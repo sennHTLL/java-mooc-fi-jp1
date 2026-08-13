@@ -4,16 +4,22 @@ import jpi.constructor.SimpleCollection;
 
 public class Exercise05 {
   public static void run() {
-    SimpleCollection sc = new SimpleCollection("characters");
-    IO.println(sc);
+    SimpleCollection xMen = new SimpleCollection("X-Men");
+    IO.println(xMen);
+    IO.println(xMen.longest());
 
-    sc.add("gambit");
-    IO.println(sc);
+    xMen.add("gambit");
+    IO.println(xMen);
 
-    sc.add("jean grey");
-    IO.println(sc);
+    xMen.add("jean grey");
+    IO.println(xMen);
 
-    sc.add("wolverine");
-    IO.println(sc);
+    xMen.add("wolverine");
+    IO.println(xMen);
+
+    xMen.add("professor xavier");
+    IO.println(xMen);
+
+    IO.println(xMen.longest());
   }
 }
