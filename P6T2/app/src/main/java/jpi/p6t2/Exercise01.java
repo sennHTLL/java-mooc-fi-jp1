@@ -10,7 +10,7 @@ public class Exercise01 {
         Scanner scanner = new Scanner(System.in);
         WordSet set = new WordSet();
 
-        UserInterface userInterface = new UserInterface(scanner, set);
-        userInterface.start();
+        // UserInterface userInterface = new UserInterface(scanner, list);
+        // userInterface.start();
     }
 }

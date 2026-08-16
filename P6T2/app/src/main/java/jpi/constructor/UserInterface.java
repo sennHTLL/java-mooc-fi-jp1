@@ -5,27 +5,31 @@ import java.util.Scanner;
 public class UserInterface {
 
     private Scanner scanner;
-    private WordSet wordSet;
+    private TodoList list;
 
-    public UserInterface(Scanner scanner, WordSet wordSet) {
+    public UserInterface(Scanner scanner, TodoList list) {
         this.scanner = scanner;
-        this.wordSet = wordSet;
+        this.list = list;
     }
 
     public void start() {
-
         while (true) {
-            IO.print("input something: ");
-            String userInput = scanner.nextLine();
+            IO.print("Command: ");
+            String command = this.scanner.nextLine();
 
-            if (this.wordSet.contains(userInput)) {
+            if (command.equals("close")) {
+                IO.println("Bai bai");
                 break;
+            } else if (command.equals("add")) {
+                String task = this.scanner.nextLine();
+                list.add(task);
+            } else if (command.equals("list")) {
+                list.print();
+            } else if (command.equals("remove")) {
+                IO.print("Which one is removed? ");
+                int index = Integer.valueOf(this.scanner.nextLine());
+                list.remove(index);
             }
-
-            this.wordSet.add(userInput);
         }
-
-        IO.println("you inputed same word twice");
-        IO.println(this.wordSet.palindromes() + " of the words were palindromes");
     }
 }
