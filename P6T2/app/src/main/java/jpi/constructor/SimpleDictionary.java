@@ -26,6 +26,6 @@ public class SimpleDictionary {
             }
         }
 
-        return null;
+        return "Word was not found";
     }
 }

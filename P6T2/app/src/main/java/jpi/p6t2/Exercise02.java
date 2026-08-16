@@ -1,6 +1,9 @@
 package jpi.p6t2;
 
+import java.util.Scanner;
+
 import jpi.constructor.SimpleDictionary;
+import jpi.constructor.TextUI;
 
 public class Exercise02 {
     public static void run() {
@@ -11,5 +14,13 @@ public class Exercise02 {
         IO.println("1. " + book.translate("one"));
         IO.println("2. " + book.translate("two"));
         IO.println("3. " + book.translate("three"));
+
+        Scanner scanner = new Scanner(System.in);
+        SimpleDictionary dictionary = new SimpleDictionary();
+
+        TextUI ui = new TextUI(scanner, dictionary);
+        ui.start();
+
+        IO.println(dictionary.translate("mountain"));
     }
 }
