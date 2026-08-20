@@ -27,12 +27,6 @@ public class Exercise01 {
         IO.println(Arrays.toString(numbers3));
         IO.println();
 
-        IO.println(Arrays.toString(numbers4));
         SelectionSort.sort(numbers4);
-        IO.println();
-        // IO.println(Arrays.toString(numbers4));
-        // SelectionSort.sort(numbers4);
-        // IO.println();
-        // IO.println(Arrays.toString(numbers4));
     }
 }

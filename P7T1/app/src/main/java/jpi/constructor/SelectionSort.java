@@ -5,39 +5,11 @@ import java.util.Arrays;
 public class SelectionSort {
 
     public static void sort(int[] array) {
-
-        int small = smallest(array);
-        int indexOfSmall = indexOfSmallest(array);
-        int smallest = array[indexOfSmall];
-
-        int biggest = array[0];
-
-        int biggestIndex = 0;
-        int smallestIndex = 0;
-
-        int startIndex = 0;
-
-        // for (int i = 0; i < array.length; i++) {
-        // if (array[i] < smallest) {
-        // smallest = array[i];
-        // }
-        // if (array[i] > smallest) {
-        // biggest = array[i];
-        // biggestIndex = i;
-        // IO.println("[biggest] · " + biggest + " [biggest index] · " + biggestIndex);
-        // }
-        // if (array[i] < smallest) {
-        // smallest = array[i];
-        // smallestIndex = i;
-        // IO.println("[smallest] · " + smallest + " [smallest index] · " +
-        // smallestIndex);
-        // }
-        // IO.println("I will swap · " + smallestIndex + " && " + biggestIndex);
-        // swap(array, smallestIndex, biggestIndex);
-        // IO.println();
-        // }
-
-        IO.println(small + " · index " + indexOfSmall + " · " + smallest);
+        for (int i = 0; i < array.length; i++) {
+            IO.println(Arrays.toString(array));
+            int smallest = indexOfSmallestFrom(array, i);
+            swap(array, i, smallest);
+        }
     }
 
     public static void swap(int[] array, int index1, int index2) {
@@ -78,6 +50,7 @@ public class SelectionSort {
 
         for (int i = startIndex; i < array.length; i++) {
             if (array[i] < min) {
+                min = array[i];
                 index = i;
             }
         }
