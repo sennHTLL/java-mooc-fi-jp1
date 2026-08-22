@@ -1,4 +1,4 @@
-package jpi.constructor;
+package jpi.algorithms;
 
 import java.util.Arrays;
 

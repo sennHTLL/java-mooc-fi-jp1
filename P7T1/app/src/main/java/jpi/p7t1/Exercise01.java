@@ -2,7 +2,7 @@ package jpi.p7t1;
 
 import java.util.Arrays;
 
-import jpi.constructor.SelectionSort;
+import jpi.algorithms.SelectionSort;
 
 public class Exercise01 {
     public static void run() {
