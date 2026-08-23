@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Recipe {
 
     private String title;
-    private String time;
+    private int time;
     ArrayList<String> ingredients;
 
-    public Recipe(String title, String time, ArrayList<String> ingredients) {
+    public Recipe(String title, int time, ArrayList<String> ingredients) {
         this.title = title;
         this.time = time;
         this.ingredients = ingredients;
@@ -18,11 +18,15 @@ public class Recipe {
         return this.title;
     }
 
-    public String getTime() {
+    public int getTime() {
         return this.time;
     }
 
     public ArrayList<String> getIngredients() {
         return this.ingredients;
+    }
+
+    public String getTitleAndTime() {
+        return this.title + ", cooking time: " + this.time;
     }
 }
