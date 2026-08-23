@@ -8,11 +8,11 @@ public class App {
         // Exercise02.run();
         // IO.println("EX 3 ===== [linear · binary] =====");
         // Exercise03.run();
-        // IO.println("EX 4 ===== [grade statistics] =====");
-        // Exercise04.run();
+        IO.println("EX 4 ===== [grade statistics] =====");
+        Exercise04.run();
         // IO.println("EX 5 ===== [recipe search] =====");
         // Exercise05.run();
-        IO.println("EX 6 ===== [big year · birds] =====");
-        Exercise06.run();
+        // IO.println("EX 6 ===== [big year · birds] =====");
+        // Exercise06.run();
     }
 }
